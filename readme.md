@@ -69,7 +69,7 @@ make install
 python manage.py runserver
 ```
 Open the browser or Postman tool and start making http requests!
-
+ 
 
 ***
 ### Goals:
