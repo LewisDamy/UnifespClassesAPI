@@ -15,15 +15,7 @@ power of Django as a backend framework, while learning about and starting
 my first open-source project tha focuses on building a better system to help Unifesp students
 when selecting their subjects in each semester.
 
-
-
 ***
-
-### About the tool:
-
-Firstly this code starts after the conversion from a .csv file to the .db file 
-from the [database.py](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/database.py) file.
-
 
 ## Django REST API
 ![Postman Request API](https://github.com/LewisDamy/UnifespClassesAPI/blob/main/images/PostmanRequestAPI.png)
@@ -53,7 +45,10 @@ python manage.py runserver
 Open the browser or Postman tool and start making http requests!
 
 ### Connection between projects
-I've made a copy from the [unifespSubjects.db](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/unifespSubjects.db)
+
+Firstly this code starts after the conversion from a .csv file to the .db file 
+from the [database.py](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/database.py) file.
+Then, I've made a copy from the [unifespSubjects.db](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/unifespSubjects.db)
 from the [UnifespTables](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp) project into the Django database by using the following commands:
 
 #### Inside the [unifespSubjects.db](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/unifespSubjects.db):
