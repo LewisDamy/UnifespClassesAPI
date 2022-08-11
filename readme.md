@@ -23,25 +23,7 @@ when selecting their subjects in each semester.
 
 Firstly this code starts after the conversion from a .csv file to the .db file 
 from the [database.py](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/database.py) file.
-Hence, I've made a copy from the [unifespSubjects.db](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/unifespSubjects.db)
-into the Django database by using the following commands:
 
-#### Inside the [unifespSubjects.db](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/unifespSubjects.db):
-```sqlite
-.output ucs.sql
-.dump ucs
-.quit
-```
-
-#### Inside the db.sqlite3 from Django:
-```sqlite
-.read .read ucs.sql
-INSERT INTO unifespClasses_subject SELECT * FROM ucs;
-```
-
-<p>
-After that, the data from the previous project has been insert into our Django application.
-</p>
 
 ## Django REST API
 ![Postman Request API](https://github.com/LewisDamy/UnifespClassesAPI/blob/main/images/PostmanRequestAPI.png)
@@ -69,7 +51,27 @@ make install
 python manage.py runserver
 ```
 Open the browser or Postman tool and start making http requests!
- 
+
+### Connection between projects
+I've made a copy from the [unifespSubjects.db](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/unifespSubjects.db)
+from the [UnifespTables](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp) project into the Django database by using the following commands:
+
+#### Inside the [unifespSubjects.db](https://github.com/LewisDamy/Tabelas_de_UCs_Unifesp/blob/main/unifespSubjects.db):
+```sqlite
+.output ucs.sql
+.dump ucs
+.quit
+```
+
+#### Inside the db.sqlite3 from Django:
+```sqlite
+.read .read ucs.sql
+INSERT INTO unifespClasses_subject SELECT * FROM ucs;
+```
+
+<p>
+After that, the data from the previous project has been insert into our Django application.
+</p>
 
 ***
 ### Goals:
