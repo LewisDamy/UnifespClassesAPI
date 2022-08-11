@@ -44,7 +44,7 @@ After that, the data from the previous project has been insert into our Django a
 </p>
 
 ## Django REST API
-![Postman Request API](/images/PostManRequestAPI.png)
+![Postman Request API](https://github.com/LewisDamy/UnifespClassesAPI/blob/main/images/PostmanRequestAPI.png)
 
 ### **Features**
 
