@@ -15,8 +15,6 @@ power of Django as a backend framework, while learning about and starting
 my first open-source project tha focuses on building a better system to help Unifesp students
 when selecting their subjects in each semester.
 
-***
-
 ## Django REST API
 ![Postman Request API](https://github.com/LewisDamy/UnifespClassesAPI/blob/main/images/PostmanRequestAPI.png)
 
@@ -68,7 +66,6 @@ INSERT INTO unifespClasses_subject SELECT * FROM ucs;
 After that, the data from the previous project has been insert into our Django application.
 </p>
 
-***
 ### Goals:
 <p>
 The goal is to improve and grow the project in order to make the lives of our Undergrads easier.
